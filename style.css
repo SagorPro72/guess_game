@@ -1,0 +1,167 @@
+/* Using google font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: #737373;
+  color: #fff;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  /* min-height : 100vh */
+}
+nav {
+  background-color: #fff;
+  color: #737373;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+.genBtn {
+  border: none;
+  outline: none;
+  padding: 11px 8px;
+  color: #fff;
+  cursor: pointer;
+  background: #ff6200;
+  transition: .9s;
+}
+.genBtn:hover{
+  background-color: #fff;
+  color: #ff6200;
+  border-inline: 1px solid #ff6200;
+  border-radius: 4px;
+}
+.header {
+  background-color: #ff6200;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.color_sqaures {
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  gap: 10px;
+}
+.square {
+  width: 200px;
+  height: 200px;
+  background: rgb(150, 148, 148);
+  margin: 10px;
+  border-radius: 10% 20%;
+}
+.fide {
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.hint_btn{
+  width: 100px;
+  border-radius: 20px;
+  transition: .5s;
+}
+.hint_btn .btn{
+  padding: 8px 10px;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: -1px;
+  transition: .7s;
+  border: none;
+  outline: none;
+  
+}
+.hint_btn:hover .btn{
+  outline: none;
+  border-radius: 5px;
+}
+.countWin span,.win{
+  font-size: 16px;
+  font-weight: 600;
+}
+.calSomikoron{
+  background-color: #27a7bb;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px rgb(0, 0, 0,.3);
+
+}
+.calSomikoron h1{
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 35px;
+  font-weight: 700;
+  user-select: none;
+
+}
+.inputSection input{
+  padding: 8px 10px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 16px;
+}
+.inputSection input::placeholder{
+  font-size: 14px;
+  font-weight: 500;
+  color: #0c0c0c81;
+  user-select: none;
+}
+.outputSection{
+  background: #fff;
+  padding: 10px 20px;
+  width: 300px;
+  display: block;
+  margin: auto;
+  color: #2BCAE3;
+  border-radius: 960px 1340px;
+  margin-bottom: 20px;
+}
+.outputSection .outValue{
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 2px;
+}
+.button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button .btn{
+  padding: 12px 12px;
+  outline: none;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  user-select: none;
+  font-size: 15px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.750);
+  text-transform: uppercase;
+  letter-spacing: -0.5px;
+  transition: .6s;
+}
+.button .btn:hover{
+  background: #24BB6E;
+  color: #fff;
+}
+
+.nunValue.outValue{
+  color: red;
+}

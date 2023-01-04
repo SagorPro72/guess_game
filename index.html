@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess the color</title>
+    <!-- CSS Connection -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h2>The Great Color Game</h2>
+        <h1 class="color_code">RGB (255,255,255)</h1>
+      </div>
+      <nav>
+        <button class="genBtn">Generate</button>
+        <samp class="correct"></samp>
+        <div class="countWin">
+          <span>Correct : <span class="win">0</span></span>
+        </div>
+        <div class="hint_btn">
+          <button class="btn">Show Hint</button>
+        </div>
+      </nav>
+      <div class="color_sqaures">
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+      </div>
+
+      <div class="calSomikoron">
+        <h1>দ্বিঘাত সমীকরনের মূল নিনয় :</h1>
+        <div class="inputSection">
+          <input class="a" type="text" placeholder="Enter the value of A :">
+          <input class="b" type="text" placeholder="Enter the value of B :">
+          <input class="c" type="text" placeholder="Enter the value of C :">
+        </div>
+        <div class="outputSection">
+          <div class="outValue">----</div>
+        </div>
+        <div class="button">
+          <button class="btn">Check Result</button>
+        </div>
+      </div>
+    </div>
+    <!-- Javascript Selection -->
+    <script src="script.js"></script>
+  </body>
+</html>
