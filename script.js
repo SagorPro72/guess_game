@@ -99,7 +99,7 @@ function mainCal() {
       xfinal2 = x1.toFixed(4);
       resultSec.innerHTML = `${xfinal1} And ${xfinal2}`;
     } else {
-      resultSec.innerHTML = "Not Posible.";
+      resultSec.innerHTML = "Not Possible.";
     }
     if (valueA == "" || valueB == "" || valueC == "") {
       resultSec.innerHTML = "Enter the value .!";
